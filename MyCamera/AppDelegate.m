@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+//    XCUIApplication *app = [[XCUIApplication alloc] init];
+//    [Snapshot setupSnapshot:app];
+//    [app launch];
+
     return YES;
 }
 

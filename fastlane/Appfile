@@ -1,0 +1,8 @@
+app_identifier "com.wodedata.MyCamera" # The bundle identifier of your app
+apple_id "luowei010101@gmail.com" # Your Apple email address
+
+itc_team_id "96002893" # iTunes Connect Team ID
+team_id "G3A2KYKYBU" # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

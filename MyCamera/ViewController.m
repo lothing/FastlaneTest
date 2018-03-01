@@ -26,9 +26,10 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    self.textLabel.center = CGPointMake(self.view.center.x, self.view.center.y - 100);
 }
 
 
@@ -42,12 +43,6 @@
     } completion:^(BOOL finished) {
         self.textLabel.center = touchPt;
     }];
-    
-    //    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
-    //        self.textLabel.center = touchPt;
-    //    } completion:^(BOOL finished) {
-    //        self.textLabel.center = touchPt;
-    //    }];
     
 }
 
