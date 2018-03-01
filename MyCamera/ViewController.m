@@ -22,6 +22,7 @@
     self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     self.hud.mode = MBProgressHUDModeText;
     self.hud.offset = CGPointMake(0, -250);
+    self.hud.label.text = [NSString stringWithFormat:@"%.2f,%.2f",self.view.center.x,self.view.center.y];
 }
 
 
@@ -34,7 +35,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     CGPoint touchPt = [touches.anyObject locationInView:self.view];
-    self.hud.label.text = [NSString stringWithFormat:@"%f,%f",touchPt.x,touchPt.y];
+    self.hud.label.text = [NSString stringWithFormat:@"%.2f,%.2f",touchPt.x,touchPt.y];
 
     [UIView animateWithDuration:0.25 delay:0 usingSpringWithDamping:100 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.textLabel.center = touchPt;
