@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MBProgressHUD;
+
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *textLabel;
 
+@property(nonatomic, strong) MBProgressHUD *hud;
 @end
 
